@@ -1,0 +1,24 @@
+Scanning workspace: C:\Users\HP\Downloads\test-repos\flask
+Parsing source files: 105
+[STAGE 1 COMPLETE] 105 files, 343 internal file edges, 0 package-level edges, 353 unresolved/external imports, 0 symbol edges, 0 unresolved Go usages
+
+[SHIPREADYV2 LINKER RESOLUTION COMPLETE]
+Output: C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\c\run\shipreadyv2_resolved_graph.json
+Files indexed: 105
+Imports: 246 resolved, 0 package-level, 0 partial, 450 unresolved, 0 hard-path skipped, 2 uncertain
+Python enrichment: 83 files, 2 safe constants, 2 dynamic imports marked
+Symbols: 203/503 resolved; 40 ambiguous names in index
+Symbol edges added: 246
+Go symbol edges promoted: 0; unresolved Go usages: 0
+
+[SHIPREADYV2 FAST LANE COMPLETE]
+Target folder: C:\Users\HP\Downloads\test-repos\flask
+Run folder:    C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\c\run
+Profile JSON:  C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\c\run\fast_lane_repository_profile.json
+Resolved JSON: C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\c\run\shipreadyv2_resolved_graph.json
+Symbol graph:  C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\c\run\fast_lane_symbol_resolution_graph.html
+Click downloads: 102 files, 482 code sections, prepared in 0.606s
+Context JSON:  C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\c\run\fast_lane_context_store.json
+Complete ZIP:  C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\c\run\shipready_complete_repository_context.zip
+Context timing: {'code_sections': 0.256, 'connections': 0.02, 'download_selections': 0.18, 'browser_store': 0.032, 'zip_bundle': 0.106}
+Timing:        {'graph_build_seconds': 2.605, 'linker_seconds': 0.987, 'context_download_preparation_seconds': 0.606, 'html_render_seconds': 2.224, 'fast_lane_total_seconds': 6.424}

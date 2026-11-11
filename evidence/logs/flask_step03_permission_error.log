@@ -1,0 +1,127 @@
+Scanning workspace: C:\Users\HP\Downloads\test-repos\flask
+Parsing source files: 105
+[STAGE 1 COMPLETE] 105 files, 343 internal file edges, 0 package-level edges, 353 unresolved/external imports, 0 symbol edges, 0 unresolved Go usages
+
+[SHIPREADYV2 LINKER RESOLUTION COMPLETE]
+Output: C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\b\run\shipreadyv2_resolved_graph.json
+Files indexed: 105
+Imports: 246 resolved, 0 package-level, 0 partial, 450 unresolved, 0 hard-path skipped, 2 uncertain
+Python enrichment: 83 files, 2 safe constants, 2 dynamic imports marked
+Symbols: 203/503 resolved; 40 ambiguous names in index
+Symbol edges added: 246
+Go symbol edges promoted: 0; unresolved Go usages: 0
+
+[SHIPREADYV2 LLM FEED COMPLETE]
+Repository: C:\Users\HP\Downloads\test-repos\flask
+Resolved graph: C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\b\run\shipreadyv2_resolved_graph.json
+Atomic chunks: 391
+Chunk relationships: 730
+LLM batches: 47
+Feed: C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\b\run\shipreadyv2_llm_feed.jsonl
+Tokenizer: tiktoken:cl100k_base
+
+[SHIPREADYV2 SEMANTIC PACKS COMPLETE]
+Source 12K batches: 47
+Semantic packs: 4
+Semantic token range: 35,000 target-min / 55,000 target / 75,000 hard
+Packing guard: 73,500 content/context base + up to 1,500 bridge tokens
+  semantic_pack_001: 58,608 tokens, 4 source batches, 1 component(s), within-range
+  semantic_pack_002: 59,018 tokens, 7 source batches, 1 component(s), within-range
+  semantic_pack_003: 45,817 tokens, 7 source batches, 1 component(s), within-range
+  semantic_pack_004: 74,212 tokens, 29 source batches, 26 component(s), within-range
+Semantic feed: C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\b\run\shipreadyv2_semantic_packs.jsonl
+
+[SHIPREADYV2 UNIFIED PIPELINE COMPLETE]
+Target folder: C:\Users\HP\Downloads\test-repos\flask
+Run folder:    C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\b\run
+Resolved JSON: C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\b\run\shipreadyv2_resolved_graph.json
+LLM feed:      C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\b\run\shipreadyv2_llm_feed.jsonl
+Semantic feed: C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\b\run\shipreadyv2_semantic_packs.jsonl
+
+[SHIPREADYV2 PASS 1 INPUT PREPARATION COMPLETE]
+Semantic input:  C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\b\run\shipreadyv2_semantic_packs.jsonl
+Compact taxonomy:C:\Users\HP\AppData\Local\Temp\unvibecode-engine-t594mu0k\engine\archetype_taxonomy_pass1_compact.yaml
+Output JSONL:    C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\b\run\shipreadyv2_pass1_llm_inputs.jsonl
+Tokenizer:       tiktoken:cl100k_base
+Shared context:  9,600 tokens
+Taxonomy routing: 7,902 LLM classification tokens; 9,174 deterministic-only tokens
+Semantic packs:  4
+LLM requests:    8
+Request tokens: min=38,651, avg=49,845, max=62,343
+Requests per semantic pack:
+  semantic_pack_001: 2
+  semantic_pack_002: 2
+  semantic_pack_003: 1
+  semantic_pack_004: 3
+Next: run exactly two pass1_semantic_request records for quality review.
+[SHIPREADYV2 PASS 1 FULL REPOSITORY RUN]
+Input:      C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt\b\run\shipreadyv2_pass1_llm_inputs.jsonl
+Environment:C:\Users\HP\AppData\Local\Temp\unvibecode-engine-t594mu0k\engine\.env
+Runner:     full-v3-parallel-partial-20260717
+Model:      gpt-5.4-mini
+Reasoning:  low
+Risk triggers: NOT supplied to the LLM; deterministic stage only
+Validated 8 prepared requests; selected=8; reused=0; pending=8
+Running 8 pending Pass 1 request(s) with concurrency=2; each request gets one initial attempt and at most one validation correction.
+[1/8] START semantic_pack_001_part_01 | attempt=1/2, input=62,401, reasoning=low, max_output=32,000
+[2/8] START semantic_pack_001_part_02 | attempt=1/2, input=39,092, reasoning=low, max_output=32,000
+  ... semantic_pack_001_part_01 attempt 1 still processing (10s elapsed)
+  ... semantic_pack_001_part_02 attempt 1 still processing (10s elapsed)
+[2/8] DONE semantic_pack_001_part_02 in 13.6s | input=45914, cached=6579, output=716, reasoning=151 | paths=0, facts=0, evidence=4
+[3/8] START semantic_pack_002_part_01 | attempt=1/2, input=41,228, reasoning=low, max_output=32,000
+[1/8] DONE semantic_pack_001_part_01 in 17.4s | input=69356, cached=6579, output=1223, reasoning=122 | paths=0, facts=0, evidence=7
+[4/8] START semantic_pack_002_part_02 | attempt=1/2, input=55,036, reasoning=low, max_output=32,000
+  ... semantic_pack_002_part_01 attempt 1 still processing (10s elapsed)
+  ... semantic_pack_002_part_02 attempt 1 still processing (10s elapsed)
+  ... semantic_pack_002_part_01 attempt 1 still processing (20s elapsed)
+  ... semantic_pack_002_part_02 attempt 1 still processing (20s elapsed)
+[3/8] DONE semantic_pack_002_part_01 in 27.6s | input=48086, cached=6579, output=3729, reasoning=82 | paths=1, facts=4, evidence=26
+[5/8] START semantic_pack_003_part_01 | attempt=1/2, input=62,802, reasoning=low, max_output=32,000
+  ... semantic_pack_002_part_02 attempt 1 still processing (30s elapsed)
+  ... semantic_pack_003_part_01 attempt 1 still processing (10s elapsed)
+  ... semantic_pack_002_part_02 attempt 1 still processing (40s elapsed)
+  ... semantic_pack_003_part_01 attempt 1 still processing (20s elapsed)
+[5/8] DONE semantic_pack_003_part_01 in 23.4s | input=69738, cached=6579, output=2920, reasoning=249 | paths=1, facts=3, evidence=22
+[6/8] START semantic_pack_004_part_01 | attempt=1/2, input=43,255, reasoning=low, max_output=32,000
+  ... semantic_pack_002_part_02 attempt 1 still processing (50s elapsed)
+[4/8] DONE semantic_pack_002_part_02 in 51.1s | input=62033, cached=6579, output=7198, reasoning=66 | paths=3, facts=10, evidence=54
+[7/8] START semantic_pack_004_part_02 | attempt=1/2, input=43,041, reasoning=low, max_output=32,000
+[6/8] DONE semantic_pack_004_part_01 in 7.0s | input=50193, cached=6579, output=712, reasoning=106 | paths=0, facts=0, evidence=4
+[8/8] START semantic_pack_004_part_03 | attempt=1/2, input=55,940, reasoning=low, max_output=32,000
+[7/8] DONE semantic_pack_004_part_02 in 9.9s | input=50065, cached=6579, output=1050, reasoning=138 | paths=0, facts=0, evidence=4
+  ... semantic_pack_004_part_03 attempt 1 still processing (10s elapsed)
+[8/8] DONE semantic_pack_004_part_03 in 11.2s | input=63021, cached=6579, output=844, reasoning=92 | paths=0, facts=0, evidence=6
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\shipreadyv2\customer_runner.py", line 1759, in run_full_analysis_worker
+    run_step_three(module, report_folder, engine_root)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\shipreadyv2\customer_runner.py", line 1630, in run_step_three
+    call_main(module, "Step 03")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Roaming\Python\Python314\site-packages\shipreadyv2\customer_runner.py", line 1043, in call_main
+    normalize_return_code(main_function(), stage_name)
+                          ~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Temp\unvibecode-engine-t594mu0k\engine\03_shipreadyv2_pass1_full_runner.py", line 1430, in main
+    failures = run_requests_in_parallel(
+        run_id=run_id,
+    ...<6 lines>...
+        counter=counter,
+    )
+  File "C:\Users\HP\AppData\Local\Temp\unvibecode-engine-t594mu0k\engine\03_shipreadyv2_pass1_full_runner.py", line 1312, in run_requests_in_parallel
+    persist_results(RESULTS_JSONL_PATH, selected_requests, completed)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Temp\unvibecode-engine-t594mu0k\engine\03_shipreadyv2_pass1_full_runner.py", line 1008, in persist_results
+    atomic_write_jsonl(path, ordered)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Temp\unvibecode-engine-t594mu0k\engine\03_shipreadyv2_pass1_full_runner.py", line 168, in atomic_write_jsonl
+    atomic_write_text(path, text)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Temp\unvibecode-engine-t594mu0k\engine\03_shipreadyv2_pass1_full_runner.py", line 159, in atomic_write_text
+    temporary.replace(path)
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\pathlib\__init__.py", line 1091, in replace
+    os.replace(self, target)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\HP\\AppData\\Local\\Temp\\uvc-5kfgmgqt\\b\\run\\shipreadyv2_pass1_full_results.jsonl.tmp' -> 'C:\\Users\\HP\\AppData\\Local\\Temp\\uvc-5kfgmgqt\\b\\run\\shipreadyv2_pass1_full_results.jsonl'
+

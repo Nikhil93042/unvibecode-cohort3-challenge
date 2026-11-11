@@ -1,0 +1,80 @@
+{
+  "schema_version": "shipreadyv2.customer_analysis_status.v10",
+  "runner_version": "shipreadyv2.customer_mvp.v10",
+  "updated_at": "2026-11-06T07:05:55.481332+00:00",
+  "analysis_directory": "C:\\Users\\HP\\Downloads\\unvibecode-cohort3\\unvibecode_results\\flask-unvibecode-analysis-20261106_123405",
+  "repository": "C:\\Users\\HP\\Downloads\\test-repos\\flask",
+  "engine_root": "C:\\Users\\HP\\AppData\\Local\\Temp\\unvibecode-engine-t594mu0k\\engine",
+  "repository_estimate": {
+    "method": "supported_source_bytes_divided_by_3.2",
+    "source_files": 105,
+    "source_bytes": 622332,
+    "approximate_tokens": 194479,
+    "unreadable_files": []
+  },
+  "large_repository_policy": {
+    "limit_tokens": 2000000,
+    "is_large_repository": false,
+    "decision": "CONNECTED_CODE_MAP_AND_BUSINESS_REVIEW"
+  },
+  "overall_status": "PARTIAL",
+  "lanes": {
+    "FAST_LANE": {
+      "status": "COMPLETED",
+      "message": "Codebase map and connected code downloads are ready",
+      "customer_reason": null,
+      "started_at": "2026-11-06T07:04:12.753352+00:00",
+      "completed_at": "2026-11-06T07:04:12.753389+00:00",
+      "duration_seconds": 6.964,
+      "run_folder": "C:\\Users\\HP\\AppData\\Local\\Temp\\uvc-5kfgmgqt\\c\\run",
+      "artifacts": {
+        "resolved_graph": "C:\\Users\\HP\\AppData\\Local\\Temp\\uvc-5kfgmgqt\\c\\run\\shipreadyv2_resolved_graph.json",
+        "repository_profile": "C:\\Users\\HP\\AppData\\Local\\Temp\\uvc-5kfgmgqt\\c\\run\\fast_lane_repository_profile.json",
+        "interactive_graph": "C:\\Users\\HP\\AppData\\Local\\Temp\\uvc-5kfgmgqt\\c\\run\\fast_lane_symbol_resolution_graph.html",
+        "browser_context_store": "C:\\Users\\HP\\AppData\\Local\\Temp\\uvc-5kfgmgqt\\c\\run\\fast_lane_context_store.js",
+        "api_context_store": "C:\\Users\\HP\\AppData\\Local\\Temp\\uvc-5kfgmgqt\\c\\run\\fast_lane_context_store.json",
+        "complete_repository_context": "C:\\Users\\HP\\AppData\\Local\\Temp\\uvc-5kfgmgqt\\c\\run\\shipready_complete_repository_context.zip",
+        "timing": "C:\\Users\\HP\\AppData\\Local\\Temp\\uvc-5kfgmgqt\\c\\run\\fast_lane_timing.json"
+      },
+      "components": {
+        "connected_code_map": "COMPLETED",
+        "repository_context": "COMPLETED"
+      },
+      "error": null
+    },
+    "FULL_ANALYSIS": {
+      "status": "FAILED",
+      "message": "Business Workflow & Risk Review stopped during STEP_03",
+      "customer_reason": "Step 03 did not complete. Results that finished successfully were preserved.",
+      "started_at": "2026-11-06T07:05:53.912610+00:00",
+      "completed_at": "2026-11-06T07:05:53.912626+00:00",
+      "duration_seconds": 108.124,
+      "active_stage": "STEP_03",
+      "completed_stages": [
+        "STEP_01",
+        "STEP_02"
+      ],
+      "run_folder": "C:\\Users\\HP\\AppData\\Local\\Temp\\uvc-5kfgmgqt\\b\\run",
+      "artifacts": {
+        "report_folder": "C:\\Users\\HP\\AppData\\Local\\Temp\\uvc-5kfgmgqt\\b\\run"
+      },
+      "components": {
+        "business_workflows": "UNAVAILABLE",
+        "risk_findings": "UNAVAILABLE"
+      },
+      "review_outcome": "UNAVAILABLE",
+      "selection_summary": null,
+      "error": {
+        "error_type": "PermissionError",
+        "message": "[WinError 5] Access is denied: 'C:\\\\Users\\\\HP\\\\AppData\\\\Local\\\\Temp\\\\uvc-5kfgmgqt\\\\b\\\\run\\\\shipreadyv2_pass1_full_results.jsonl.tmp' -> 'C:\\\\Users\\\\HP\\\\AppData\\\\Local\\\\Temp\\\\uvc-5kfgmgqt\\\\b\\\\run\\\\shipreadyv2_pass1_full_results.jsonl'",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\HP\\AppData\\Roaming\\Python\\Python314\\site-packages\\shipreadyv2\\customer_runner.py\", line 1759, in run_full_analysis_worker\n    run_step_three(module, report_folder, engine_root)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\HP\\AppData\\Roaming\\Python\\Python314\\site-packages\\shipreadyv2\\customer_runner.py\", line 1630, in run_step_three\n    call_main(module, \"Step 03\")\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\HP\\AppData\\Roaming\\Python\\Python314\\site-packages\\shipreadyv2\\customer_runner.py\", line 1043, in call_main\n    normalize_return_code(main_function(), stage_name)\n                          ~~~~~~~~~~~~~^^\n  File \"C:\\Users\\HP\\AppData\\Local\\Temp\\unvibecode-engine-t594mu0k\\engine\\03_shipreadyv2_pass1_full_runner.py\", line 1430, in main\n    failures = run_requests_in_parallel(\n        run_id=run_id,\n    ...<6 lines>...\n        counter=counter,\n    )\n  File \"C:\\Users\\HP\\AppData\\Local\\Temp\\unvibecode-engine-t594mu0k\\engine\\03_shipreadyv2_pass1_full_runner.py\", line 1312, in run_requests_in_parallel\n    persist_results(RESULTS_JSONL_PATH, selected_requests, completed)\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\HP\\AppData\\Local\\Temp\\unvibecode-engine-t594mu0k\\engine\\03_shipreadyv2_pass1_full_runner.py\", line 1008, in persist_results\n    atomic_write_jsonl(path, ordered)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"C:\\Users\\HP\\AppData\\Local\\Temp\\unvibecode-engine-t594mu0k\\engine\\03_shipreadyv2_pass1_full_runner.py\", line 168, in atomic_write_jsonl\n    atomic_write_text(path, text)\n    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"C:\\Users\\HP\\AppData\\Local\\Temp\\unvibecode-engine-t594mu0k\\engine\\03_shipreadyv2_pass1_full_runner.py\", line 159, in atomic_write_text\n    temporary.replace(path)\n    ~~~~~~~~~~~~~~~~~^^^^^^\n  File \"C:\\Python314\\Lib\\pathlib\\__init__.py\", line 1091, in replace\n    os.replace(self, target)\n    ~~~~~~~~~~^^^^^^^^^^^^^^\nPermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\HP\\\\AppData\\\\Local\\\\Temp\\\\uvc-5kfgmgqt\\\\b\\\\run\\\\shipreadyv2_pass1_full_results.jsonl.tmp' -> 'C:\\\\Users\\\\HP\\\\AppData\\\\Local\\\\Temp\\\\uvc-5kfgmgqt\\\\b\\\\run\\\\shipreadyv2_pass1_full_results.jsonl'\n"
+      }
+    }
+  },
+  "customer_results": {
+    "complete_repository_context": "C:\\Users\\HP\\Downloads\\unvibecode-cohort3\\unvibecode_results\\flask-unvibecode-analysis-20261106_123405\\flask-repository-context.zip",
+    "connected_code_map": "C:\\Users\\HP\\Downloads\\unvibecode-cohort3\\unvibecode_results\\flask-unvibecode-analysis-20261106_123405\\report-support\\connected-code.html",
+    "interim_results_page": "C:\\Users\\HP\\Downloads\\unvibecode-cohort3\\unvibecode_results\\flask-unvibecode-analysis-20261106_123405\\flask-unvibecode-interim.html",
+    "results_landing_page": "C:\\Users\\HP\\Downloads\\unvibecode-cohort3\\unvibecode_results\\flask-unvibecode-analysis-20261106_123405\\flask-unvibecode-full.html"
+  }
+}

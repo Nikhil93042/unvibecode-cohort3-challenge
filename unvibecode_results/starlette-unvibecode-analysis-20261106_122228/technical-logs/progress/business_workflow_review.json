@@ -1,0 +1,9 @@
+{
+  "updated_at": "2026-11-06T06:56:21.222014+00:00",
+  "updated_epoch": 1793948181.2220418,
+  "percent": 99,
+  "phase": "PARTIAL",
+  "message": "Partially ready",
+  "detail": "Some Business analysis results could not be prepared. Available results were preserved.",
+  "report_folder": "C:\\Users\\HP\\AppData\\Local\\Temp\\uvc-qp864s23\\b\\run"
+}

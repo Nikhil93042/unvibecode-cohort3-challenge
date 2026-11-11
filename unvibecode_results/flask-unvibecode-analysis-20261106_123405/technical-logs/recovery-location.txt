@@ -1,0 +1,2 @@
+Analysis recovery files (keep until recovery is complete):
+C:\Users\HP\AppData\Local\Temp\uvc-5kfgmgqt

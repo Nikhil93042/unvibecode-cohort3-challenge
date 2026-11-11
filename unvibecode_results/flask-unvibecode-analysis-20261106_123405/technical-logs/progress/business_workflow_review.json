@@ -1,0 +1,9 @@
+{
+  "updated_at": "2026-11-06T07:05:53.876905+00:00",
+  "updated_epoch": 1793948753.8769333,
+  "percent": 20,
+  "phase": "FAILED",
+  "message": "Needs attention",
+  "detail": "Step 03 did not complete. Results that finished successfully were preserved.",
+  "report_folder": "C:\\Users\\HP\\AppData\\Local\\Temp\\uvc-5kfgmgqt\\b\\run"
+}
